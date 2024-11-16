@@ -13,6 +13,12 @@
     />
     <link href="./src/output.css" rel="stylesheet" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Kaushan+Script&family=Outfit:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Blog preview card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,15 +32,44 @@
       }
     </style>
   </head>
-  <body
-    class="bg-gray-950 flex justify-center items-center min-h-screen min-w-full"
-  >
+  <body class="bg-gray-950">
     <main
-      class="sm:w-[1440px] w-[375px] sm:h-[812px] bg-[#F4D04E] flex justify-center items-center min-h-screen min-w-full"
+      class="bg-[#F4D04E] flex flex-col justify-center items-center min-h-screen min-w-full font-[Figtree]"
     >
-      Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
-      the backbone of every website, defining structure, content, and
-      presentation. Greg Hooper
+      <article
+        class="bg-white w-[327px] h-[501px] mobile:w-[384px] mobile:h-[522px] flex flex-col rounded-lg drop-shadow-3xl mb-3"
+      >
+        <div class="w-[279px] h-[200px] mobile:w-[336px] m-6">
+          <img
+            src="./assets/images/illustration-article.svg"
+            alt=""
+            class="rounded-lg bg-cover"
+          />
+        </div>
+        <div class="ml-6 mr-6 mb-6">
+          <h1
+            class="bg-[#F4D04E] flex text-left font-light italic mobile:font-extrabold mobile:not-italic text-[12px] pt-1 pb-1 px-3 py-3 w-20 rounded-md mobile:rounded-sm mobile:text-sm"
+          >
+            Learning
+          </h1>
+          <p class="mt-4 text-[12px] mobile:text-sm">Published 21 Dec 2023</p>
+          <h2
+            class="text-xl mobile:text-2xl font-[Figtree] font-extrabold mt-4"
+          >
+            HTML & CSS foundations
+          </h2>
+          <p class="text-sm mobile:text-base mt-4 text-gray-500">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="flex items-center ml-6 mb-6">
+          <div class="w-8 mr-2">
+            <img src="./assets/images/image-avatar.webp" alt="" />
+          </div>
+          <p class="text-sm font-extrabold">Greg Hooper</p>
+        </div>
+      </article>
 
       <div class="attribution">
         Challenge by
